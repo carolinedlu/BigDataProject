@@ -7,7 +7,7 @@ import java.net.*;
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.util.*;
 import org.apache.hadoop.mapreduce.Reducer;
-public class HostCountReducer
+public class BoroughTimeReducer
 extends Reducer<Text, IntWritable, Text, LongWritable> {
 @Override
 public void reduce(Text key, Iterable<IntWritable> values,
